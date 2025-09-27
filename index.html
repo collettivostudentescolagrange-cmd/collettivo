@@ -15,6 +15,7 @@
             font-family: 'Inter', sans-serif;
             /* Define a custom property for the gold text color from the logo for reuse */
             --logo-gold: #F4C759;
+            --header-red: #C5292A; /* Defined for the button background */
         }
         /* Simple scale animation for the main heading to create subtle movement */
         @keyframes pulse-scale {
@@ -23,6 +24,11 @@
         }
         .animate-pulse-scale {
             animation: pulse-scale 3s infinite ease-in-out;
+        }
+        /* Custom button hover effect for polish */
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -55,10 +61,19 @@
             <p class="text-xl md:text-2xl text-gray-400 mb-8">
                 Ci stiamo organizzando per portarvi la possibilità di essere ascoltati!
             </p>
-            <p class="text-lg text-gray-400">
+            <p class="text-lg text-gray-400 mb-10">
                 Ricordiamo che il collettivo è di tutti e tutte, senza distinzioni!
             </p>
         </header>
+
+        <!-- New Button: Redirects to scopo.html -->
+        <a 
+            href="scopo.html" 
+            class="btn-primary inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition duration-300 ease-in-out rounded-xl shadow-lg transform active:scale-95"
+            style="background-color: var(--header-red); border: 2px solid var(--logo-gold);"
+        >
+            Scopri il Nostro Scopo
+        </a>
 
         <!-- Placeholder for potential updates/signup if needed later -->
         <div class="mt-10 pt-6 border-t border-gray-700">
