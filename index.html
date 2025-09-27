@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" type="image/png" href="collettivoimage.jpeg">
-    <title>Collettivo Modignani</title>
-  </head>
-  <body>
-    <h1>Coming Soon</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collettivo Modignani - Coming Soon</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon: Using the logo image for the browser tab icon -->
+    <link rel="icon" type="image/jpeg" href="collettivoimage.jpeg">
+    <style>
+        /* Custom font import for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Define a custom property for the gold text color from the logo for reuse */
+            --logo-gold: #F4C759;
+        }
+        /* Simple scale animation for the main heading to create subtle movement */
+        @keyframes pulse-scale {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.02); opacity: 0.95; }
+        }
+        .animate-pulse-scale {
+            animation: pulse-scale 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main Content Container: Centered and responsive -->
+    <main class="w-full max-w-3xl p-6 md:p-12 bg-gray-800 rounded-2xl shadow-2xl text-center">
+        
+        <!-- Logo Display -->
+        <div class="mb-8">
+            <!-- 
+                Using the uploaded logo file path. 
+                Styled as a subtle circular frame with a gold border to highlight it.
+            -->
+            <img 
+                src="collettivoimage.jpeg" 
+                alt="Collettivo Modignani Logo" 
+                class="w-48 h-48 mx-auto object-cover rounded-full border-4 border-amber-400 p-1 bg-white"
+            >
+        </div>
+
+        <!-- Heading and Subtitle -->
+        <header>
+            <h1 
+                class="text-6xl md:text-8xl font-extrabold tracking-tight mb-4 animate-pulse-scale" 
+                style="color: var(--logo-gold);"
+            >
+                COMING SOON
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                Ci stiamo organizzando per portarvi la possibilità di essere ascoltati!
+            </p>
+            <p class="text-lg text-gray-400">
+                Ricordiamo che il collettivo è di tutti e tutte, senza distinzioni!
+            </p>
+        </header>
+
+        <!-- Placeholder for potential updates/signup if needed later -->
+        <div class="mt-10 pt-6 border-t border-gray-700">
+            <p class="text-sm text-gray-500">
+                Seguite il Collettivo su instagram!
+            </p>
+            <!-- Social media icons can be added here when needed -->
+        </div>
+
+    </main>
+
+    <!-- Footer for Company Name -->
+    <footer class="mt-8 text-sm text-gray-500">
+        &copy; 2025, per contatti ufficiali : collettivo.studentescolagrange@gmail.com
+    </footer>
+
+</body>
 </html>
