@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collettivo Modignani - Il Nostro Scopo</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="collettivoimage.jpeg">
+    <style>
+        /* Custom font import and dark theme variables */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            --logo-gold: #F4C759;
+            --header-red: #C5292A; /* Color matching the logo background */
+        }
+        /* Style for the header background and fixed position on scroll */
+        .fixed-header {
+            background-color: var(--header-red);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen">
+
+    <!-- Header / Navigation Bar -->
+    <header class="fixed-header w-full shadow-lg p-4 sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- Logo link to the main page - NOW POINTS TO EXTERNAL SITE -->
+            <a href="https://www.collettivo-modignani.it" class="flex items-center space-x-3">
+                <img 
+                    src="collettivoimage.jpeg" 
+                    alt="Collettivo Modignani Logo" 
+                    class="w-10 h-10 object-cover rounded-full border border-gray-100 p-0.5"
+                >
+                <span class="text-xl font-bold text-white">Collettivo Modignani</span>
+            </a>
+            <!-- Navigation Links -->
+            <nav>
+                <!-- HOME LINK - NOW POINTS TO EXTERNAL SITE -->
+                <a href="https://www.collettivo-modignani.it" class="text-white hover:text-amber-400 transition duration-300 px-3 py-2 rounded-lg">Home</a>
+                <a href="scopo.html" class="font-bold text-amber-400 bg-red-800/50 px-3 py-2 rounded-lg">Il Nostro Scopo</a>
+                <!-- Add more links here later -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-4xl mx-auto p-6 md:p-10 lg:p-12 mt-8">
+        
+        <!-- Hero Section for the Page Title -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold" style="color: var(--logo-gold);">
+                Il Nostro Scopo
+            </h1>
+            <p class="text-xl text-gray-400 mt-2">
+                Missione, Visione e Valori Fondamentali
+            </p>
+        </div>
+
+        <!-- Content Section 1: Mission -->
+        <section class="mb-12 p-6 bg-gray-800 rounded-xl shadow-xl border-l-4 border-amber-400">
+            <h2 class="text-3xl font-bold mb-4 text-white">La Nostra Missione</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                Qui inserirete il testo specifico sulla vostra missione. Ad esempio: "Il Collettivo Modignani si impegna a promuovere un ambiente scolastico inclusivo e stimolante, dove ogni studente è incoraggiato a raggiungere il suo pieno potenziale accademico e personale. Lavoriamo attivamente per creare ponti tra la comunità studentesca, i docenti e le famiglie, garantendo che le voci di tutti siano ascoltate e valorizzate nel processo decisionale educativo."
+            </p>
+        </section>
+
+        <!-- Content Section 2: Vision -->
+        <section class="mb-12 p-6 bg-gray-800 rounded-xl shadow-xl border-l-4 border-red-500">
+            <h2 class="text-3xl font-bold mb-4 text-white">La Nostra Visione</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                Qui potrete descrivere la vostra visione a lungo termine. Ad esempio: "Aspiriamo a diventare un modello di eccellenza per l'educazione partecipativa, dove l'innovazione didattica si fonde con una profonda etica sociale. Vogliamo che gli studenti di Modignani non solo siano preparati per il futuro accademico, ma che emergano come cittadini critici, consapevoli e attivamente impegnati nella società."
+            </p>
+        </section>
+
+        <!-- Content Section 3: Values -->
+        <section class="p-6 bg-gray-800 rounded-xl shadow-xl border-l-4 border-amber-400">
+            <h2 class="text-3xl font-bold mb-4 text-white">I Nostri Valori Fondamentali</h2>
+            <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed text-gray-300 ml-4">
+                <li><span class="font-semibold text-amber-300">Partecipazione:</span> Crediamo nel potere della collaborazione tra studenti, genitori e personale.</li>
+                <li><span class="font-semibold text-amber-300">Inclusione:</span> Garantiamo che l'ambiente scolastico sia sicuro e accogliente per tutti.</li>
+                <li><span class="font-semibold text-amber-300">Innovazione:</span> Sosteniamo l'adozione di metodi didattici moderni e progressivi.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 text-center text-sm text-gray-500 border-t border-gray-700">
+        &copy; 2024 Collettivo Modignani. Tutti i diritti riservati.
+    </footer>
+
+</body>
+</html>
